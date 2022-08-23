@@ -12,10 +12,14 @@
 header{
     background-image: url("../imagens/capa.png");
     color: white;
-    height: 750px;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header #divimagem img{
     width: 180px;
+    
 }
 header #divimagem{
     float: left;
@@ -32,7 +36,7 @@ header nav li{
 header #text{
     max-width: 600px;
     float: right;
-    margin: 120px 10% 0 0 ;
+    margin: 30vh 20vw 0 0 ;
 
 }
 header #text h1{
@@ -59,6 +63,10 @@ header #text h1{
 #roxa #escrito p{
     margin-bottom: 10px;
 }
+#roxa #escrito ul{
+    list-style-position: inside;
+    margin-left: -20px;
+}
 #roxa #escrito ul li{
     margin: 8px 25px ;
 }
@@ -80,6 +88,9 @@ header #text h1{
     overflow: hidden;
     margin-right: 200px;
     
+}
+.clear{
+    clear: both;
 }
 #roxa #divimagem2 img{
     width: 100%;
@@ -160,6 +171,7 @@ header #text h1{
     display: flex; 
     color: white;
     font-size: 15px;
+    padding-bottom: 50px;
 }
 #last > div{
     width: 50%;
@@ -191,8 +203,8 @@ header #text h1{
 }
 #last #direita #mapa{
     margin-top: 50px;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-color: black;
 }
 
@@ -219,6 +231,33 @@ footer p:last-child{
         margin-right: 20px;
     }
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1150px){
+    #roxa #divimagem2{
+        display: none;
+        
+    }
+    #roxa #bt{
+        margin-bottom: 50px;
+    }
     
+}
+@media screen and (max-width: 950px){
+    #last {
+        padding: 0 ;
+    }
+    #last > div{
+        margin: 20px;
+    }
+    footer p{
+        margin: 40px 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    #last{
+        flex-direction: column-reverse;
+    }
+    #last > div{
+        width: 80%;
+        margin: 50px auto;
+    }
 }
